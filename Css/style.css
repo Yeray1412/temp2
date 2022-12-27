@@ -1,0 +1,140 @@
+:root {
+    --header:'Crete Round', serif;
+    --phoppins:  'Poppins', sans-serif;
+    --inetr : 'Inter', sans-serif;
+    --ropo: 'Roboto', sans-serif;
+    --grey: #3E3C3C;
+    --black-main:#1C1A19;
+    --orange: #FF6B00;
+}
+
+/* Global */
+
+/* Header */
+
+.navbar {
+    height: 72px;
+    background-color: #3E3C3C;
+}
+
+.envelopeCon {
+    width: 100px;
+    font-size: 13px;
+}
+
+.navToggle {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+header .mainImg {
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    background-color: var(--black-main);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+header .Img {
+    position: absolute;
+    height: calc(100vh - 72px);
+    background-image: url(../Imgs/main.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 443px;
+    right: 0;
+}
+
+header .mainImg ul {
+    list-style-type: none;
+}
+
+header .mainImg ul li {
+    padding: 5px;
+}
+
+header .mainImg .text .head {
+    font-size: 72px;
+    font-family: var(--header);
+    color: var(--orange);
+    width: 400px;
+}
+
+header .mainImg .text .subHead {
+    font-family: var(--inetr);
+    color: white;
+    font-size: 32px;
+}
+
+header .mainImg .text p {
+    font-family: var(--inetr);
+    color: white;
+    font-size: 20px;
+    width: 500px;
+    padding-top: 20px;
+}
+
+header .mainImg .ulCon {
+    width: fit-content;
+    position: absolute;
+}
+
+/* Header End */
+
+
+@media (max-width: 997px) {
+
+    /* Header */
+
+    .ulCon {
+        width: 100% !important;
+    }
+
+    header .Img {
+        position: absolute;
+        height: 50%;
+        top: 370px;
+        right: -280px;
+    }
+
+    header .mainImg .text .head {
+        font-size: 52px;
+        overflow-wrap: break-word;
+        inline-size: 255px;
+    }
+
+    header .mainImg .text .subHead {
+        font-size: 24px;
+    }
+
+    header .mainImg .text p {
+        font-size: 16px;
+        overflow-wrap: break-word;
+        inline-size: 320px;
+    }
+
+    header .mainImg ul {
+        list-style-type: none;
+        padding: 0;
+    } 
+
+    .ulCon {
+        position: relative !important;
+    }
+    
+    header .mainImg ul li {
+        padding: 10px;
+    }
+
+    /* Header End */
+
+
+}
+
