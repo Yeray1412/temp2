@@ -8,6 +8,25 @@
     --orange: #FF6B00;
 }
 
+button:not(button.navToggle):hover {
+    background-color: #FFF5E1 !important;
+    border: #F55800 solid 1px !important;
+    color: #F55800 !important;
+}
+
+button:not(button.navToggle):active {
+    background-color: #F55800 !important;
+    color: white !important;
+}
+
+.stopScroll {
+    height: 100% !important;
+    overflow: hidden;
+}
+
+/* html,body{overflow-x: hidden;} */
+
+
 /* Global */
 
 /* Header */
@@ -298,6 +317,7 @@ footer h1 {
     font-size: 40px;
     color: #172B4D;
     font-weight: bold;
+    padding: 0 27px;
 }
 
 footer input {
@@ -358,6 +378,10 @@ footer .iconsCon ul li {
     padding: 10px;
 }
 
+footer .iconsCon ul li svg {
+    color: #505F79;
+}
+
 footer .iconsCon .blackGround {
     background-color: black;
     height: 5px;
@@ -416,7 +440,51 @@ footer .iconsCon .blackGround {
         padding: 20px 0 10px 0;
         border-top: 1px solid #DFE1E6;
     }
-    
+}
+
+.navPopUp {
+    position: absolute;
+    background-color: #3C3A39;
+    height: 100vh;
+    z-index: 100;
+    width: 100vw;
+    transform: translateX(-100vw);
+    transition: 0.4s;
+}
+
+.navPopUp .mainXmark {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding-bottom: 0;
+    justify-content: end;
+}
+
+.navPopUp .mainXmark svg {
+    color: #67798E;
+    width: 20px;
+    height: 20px;
+}
+
+.navPopUp .ulCon {
+    padding: 0 20px;
+}
+
+.navPopUp ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: white;
+    font-size: 32px;
+    font-family: var(--inetr);
+    font-weight: bold;
+}
+
+.navPopUp ul li {
+    padding: 20px;
+    border-bottom: solid 1px #6F6C6B;
 }
 
 @media (max-width: 997px) {
