@@ -20,7 +20,7 @@ button:not(button.navToggle):active {
 }
 
 .stopScroll {
-    height: 100% !important;
+    height: 100vh !important;
     overflow: hidden;
 }
 
@@ -221,7 +221,7 @@ header .mainImg .ulCon {
 .mainSection .cardsHolder .box:hover ~ .orngeCard {
     height: 50px;
     color: white;
-    box-shadow: 0 0 270px 160px white;
+    box-shadow: 0 0 1000px 100px white;
 }
 
 
