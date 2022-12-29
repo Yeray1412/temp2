@@ -206,8 +206,120 @@ header .mainImg .ulCon {
 }
 
 
+/* about me sec */
+
+.aboutMe {
+    background-color: var(--black-main);
+    margin-top: 130px;
+}
+
+.aboutMe .mainSec {
+    display: flex;
+    padding: 130px 0;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutMe .mainSec .text h1 {
+    color: var(--orange);
+    font-family: var(--header);
+    font-size: 72px;
+    margin: 0;
+}
+
+.aboutMe .mainSec .text p {
+    font-family: var(--inetr);
+    color: white;
+    inline-size: 443px;
+    overflow-wrap: break-word;
+    margin: 24px 0;
+}
+
+.aboutMe .mainSec button {
+    background-color: var(--orange);
+    color: white;
+    font-weight: bold;
+    border: 0;
+    padding: 8px;
+}
+
+.aboutMe .mainSec .Img {
+    position: absolute;
+    height: 268px;
+    background-image: url(../Imgs/Frame.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 443px;
+    right: 0;
+}
+
+.aboutMe .listSec .container {
+    padding: 130px 0px;
+}
+
+.aboutMe .listSec .box h2 svg {
+    color: var(--orange);
+    width: 18px;
+    height: 18px;
+    transform: translate(0px,-5px);
+}
+
+.aboutMe .listSec .box .rhombus {
+    transform: rotate(45deg) translate(-7px,-2px);
+}
+
+.aboutMe .listSec .box h2 {
+    color: white;
+}
+
+.aboutMe .listSec .box  ul{
+    color: white;
+    list-style-type: none;
+    font-family: var(--inetr);
+    margin: 0;
+    padding: 0;
+    line-height: 42px;
+}
+
+.aboutMe hr {
+    color: white;
+    opacity: 1;
+    margin: 0;
+}
+
+/* End */
+
 /* End Main  */
 
+
+@media (max-width: 776px) {
+    header .Img {
+        position: absolute;
+        height: 50%;
+        top: 370px;
+        right: -280px;
+    }
+
+    .aboutMe .mainSec .Img {
+        position: absolute;
+        height: 250px;
+        background-image: url(../Imgs/Frame.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 450px;
+        right: -280px !important;
+        bottom: 0;
+    }
+
+    .aboutMe .mainSec .text p {
+        inline-size: 350px;
+    }
+
+    .aboutMe .mainSec {
+        padding: 130px 0 209px 0;
+    }
+}
 
 @media (max-width: 997px) {
 
@@ -215,13 +327,6 @@ header .mainImg .ulCon {
 
     .ulCon {
         width: 100% !important;
-    }
-
-    header .Img {
-        position: absolute;
-        height: 50%;
-        top: 370px;
-        right: -280px;
     }
 
     header .mainImg .text .head {
@@ -290,5 +395,17 @@ header .mainImg .ulCon {
 
     /* End */
 
+    /* about Me */
+
+    .aboutMe .mainSec .Img {
+        position: absolute;
+        background-image: url(../Imgs/Frame.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        right: 0;
+        bottom: 0;
+    }
+
+    /* End */
 }
 
