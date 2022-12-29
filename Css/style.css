@@ -88,6 +88,126 @@ header .mainImg .ulCon {
 
 /* Header End */
 
+/* Main section */
+
+.mainSection .header {
+    padding: 100px 0;
+    font-size: 40px;
+    font-family: var(--header);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.mainSection .header::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 400px);
+    background-color: #212121;
+    right: 50px;
+    transform: translateY(-5px);
+}
+
+.mainSection .headText {
+    font-family: var(--header);
+    font-size: 40px;
+}
+
+.mainSection .words {
+    font-size: 20px;
+    font-family: var(--inetr);
+} 
+
+.mainSection .buttonHolder button {
+    background-color: white;
+    border: solid 1px #bbb;
+    padding: 10px;
+}
+
+.mainSection .mButton button {
+    background-color: #F55800;
+    color: white;
+    border: none;
+    padding: 12px;
+}
+
+.mainSection .mPost {
+    margin-bottom: 24px;
+}
+
+.mainSection .cardsHolder .box {
+    background: linear-gradient(to bottom, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%) ,url(../Imgs/im1.png);
+    background-size: cover;
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 435px;
+    width: 100%;
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition-duration: 1s;
+    position: relative;
+}
+
+.mainSection .cardsHolder .box .text h2 {
+    color: white;
+    font-family: var(--header);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.mainSection .cardsHolder .box .text p {
+    color: white;
+    font-family: var(--inetr);
+    font-size: 17px;
+}
+
+.mainSection .cardsHolder .box div {
+    transition-duration: 0.3s;
+}
+
+.mainSection .cardsHolder .box:hover > div {
+    opacity: 0;
+}
+
+.mainSection .cardsHolder .box .buttonHolder button {
+    background-color: rgba(255, 255, 255, 0.24);
+    color: white;
+    font-family: var(--inetr);
+    border: none;
+}
+
+.mainSection .cardsHolder .colCard {
+    overflow: hidden;
+    position: relative;
+}
+
+.mainSection .cardsHolder .orngeCard {
+    width: calc(100% - 24px);
+    position: absolute;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 35px;
+    left: 12px;
+    height: 0px;
+    background-color: var(--orange);
+    transition-duration: 0.3s;
+    font-weight: bold;
+}
+
+.mainSection .cardsHolder .box:hover ~ .orngeCard {
+    height: 50px;
+    color: white;
+    box-shadow: 0 0 270px 160px white;
+}
+
+
+/* End Main  */
+
 
 @media (max-width: 997px) {
 
@@ -135,6 +255,40 @@ header .mainImg .ulCon {
 
     /* Header End */
 
+    /* mainSec  */
+    .mainSection .header {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .mainSection .head {
+        height: 70px;
+    }
+
+    .mainSection .header::after {
+        width: calc(100% - 90px);
+        background-color: #212121;
+        right: 50px;
+    }
+
+    .mainSection .headText {
+        font-family: var(--header);
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    
+    .mainSection .words {
+        font-size: 16px;
+        font-family: var(--inetr);
+    } 
+
+    .mainSection .cardsHolder .box {
+        height: 386px;
+        width: 100%;
+    }
+    
+
+    /* End */
 
 }
 
