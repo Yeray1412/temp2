@@ -24,7 +24,7 @@ button:not(button.navToggle):active {
     overflow: hidden;
 }
 
-/* html,body{overflow-x: hidden;} */
+html,body{overflow-x: hidden;}
 
 
 /* Global */
