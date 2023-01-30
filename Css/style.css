@@ -10,7 +10,7 @@
 
 button:not(button.navToggle):hover {
     background-color: #FFF5E1 !important;
-    border: #F55800 solid 1px !important;
+    outline: #F55800 solid 1px !important;
     color: #F55800 !important;
 }
 
